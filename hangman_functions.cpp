@@ -9,7 +9,7 @@ void greet()
   std::cout << "=====================\n";
   std::cout << "Hangman: The Game\n";
   std::cout << "=====================\n";
-  std::cout << "Instructions: Save your friend from being hanged by guessing the letters in the codeword.\n";
+  std::cout << "opetus: Päästa oma sõber sõnu arvates.\n";
 }
 
 void display_misses(int misses)
@@ -90,7 +90,7 @@ void display_misses(int misses)
 
 void display_status(vector<char> incorrect, string answer)
 {
-  cout<<"Incorrect Guesses: \n";
+  cout<<"valesti arvasid: \n";
 
   for(int i = 0; i<incorrect.size(); i++)
   {
@@ -110,11 +110,11 @@ void end_game(string answer, string codeword)
 {
   if(answer==codeword)
   {
-    cout<<"Hooray! You saved the person from being hanged and earned a medal of honor!\n";
-    cout<<"Congratulations!\n";
+    cout<<"Hurraaa Sa päästsid oma sõbra!\n";
+    cout<<"Õnnitlused!\n";
   }
   else
   {
-    cout<<"On no! The man is hanged!\n";
+    cout<<"Oi EI ta poodi ülesse\n";
   }
 }
